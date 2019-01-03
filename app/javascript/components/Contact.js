@@ -8,9 +8,9 @@ class Contact extends React.Component {
   handleSubmit(e) {
     let message = e.target.elements[0].value
     axios.post('/contact', `message=${message}`)
-    .then((data) => {
-      debugger
-    })
+      .then((data) => {
+        // debugger
+      })
   }
   render() {
     return (
